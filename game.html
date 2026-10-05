@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Перевірка на тата</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="topline"><span>СІМЕЙНИЙ АРХІВ · ТЕСТУВАННЯ</span><span>№ 039 / 2026</span></div>
+  <header class="site-header">
+    <a class="logo" href="index.html">тато<span>.</span></a>
+    <button class="menu-toggle" aria-label="Відкрити меню">☰</button>
+    <nav class="nav">
+      <a href="index.html">Головна</a><a href="dossier.html">Досьє</a>
+      <a href="archive.html">Спогади</a><a class="active" href="game.html">Перевірка</a><a href="letter.html">Лист</a>
+    </nav>
+  </header>
+
+  <main class="game-page">
+    <section class="game-intro section-pad">
+      <div class="section-kicker reveal">03 / СІМЕЙНИЙ ТЕСТ</div>
+      <h1 class="reveal">Ну що, тату,<br><em>перевіримо?</em></h1>
+      <p class="archive-lead reveal">Кілька запитань про сім’ю. Тут немає оцінок — лише гарний настрій і можливість пригадати приємні моменти.</p>
+    </section>
+
+    <section class="quiz-wrap reveal">
+      <div class="quiz-top"><span>ТАТОВА ПЕРЕВІРКА</span><span class="quiz-progress-text">ПИТАННЯ 1 / 5</span></div>
+      <div class="progress-track"><span class="progress-fill"></span></div>
+      <div class="quiz-content">
+        <div class="quiz-start">
+          <div class="quiz-emblem">?</div>
+          <h2>Готовий до перевірки?</h2>
+          <p>Уважно читай запитання, обирай відповідь і подивимось, скільки балів вдасться набрати.</p>
+          <button class="button button-dark start-quiz">Почати тест <span>↗</span></button>
+        </div>
+        <div class="quiz-question" hidden>
+          <span class="question-number"></span>
+          <h2 class="question-title"></h2>
+          <div class="answers"></div>
+          <p class="answer-feedback" aria-live="polite"></p>
+          <button class="button button-dark next-question" disabled>Далі <span>→</span></button>
+        </div>
+        <div class="quiz-result" hidden>
+          <div class="result-star">✳</div>
+          <span class="section-kicker">РЕЗУЛЬТАТ ПЕРЕВІРКИ</span>
+          <h2 class="result-title">Чудова робота!</h2>
+          <div class="result-score"><strong>0</strong><span> / 5</span></div>
+          <p class="result-message"></p>
+          <button class="button button-dark restart-quiz">Пройти ще раз <span>↻</span></button>
+        </div>
+      </div>
+      <div class="quiz-bottom"><span>СПЕЦІАЛЬНИЙ ВИПУСК · 39</span><span>ВИКЛЮЧНО ДЛЯ ТАТА</span></div>
+    </section>
+
+    <p class="quiz-disclaimer">* Запитання та варіанти відповідей можна змінити у файлі <code>script.js</code> під вашу сім’ю.</p>
+    <section class="next-section section-pad reveal"><h2>Залишилося<br><em>дещо важливе.</em></h2><a class="button button-dark" href="letter.html">Відкрити лист <span>↗</span></a></section>
+  </main>
+  <footer class="site-footer"><a class="logo" href="index.html">тато<span>.</span></a><p>Зроблено з любов’ю 🤎</p><span>39 / SPECIAL EDITION</span></footer>
+</body>
+</html>
